@@ -8,7 +8,6 @@ I WANT to create a simple note taker to remind myself of daily tasks/errands
 SO THAT I can reduce stress and reward myself for tackling daily tasks/errands
 ```
 
-
 ## Acceptance Criteria
 
 ```
@@ -32,3 +31,6 @@ THEN I can create another new note
 
 ## Deployed URLs
 
+## Work References
+* All activities inside RUT-VIRT-FSF-PT-06-2022-U-LOLC/11-Express 😔
+* My awesome Study Buddies/Tutors/TA/Instructor 😊
