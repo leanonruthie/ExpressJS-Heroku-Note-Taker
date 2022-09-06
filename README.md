@@ -1,5 +1,9 @@
 # ExpressJS-Heroku-Note-Taker
 
+## Work References
+* All activities inside RUT-VIRT-FSF-PT-06-2022-U-LOLC/11-Express 😔
+* My awesome Study Buddies/Tutors/TA/Instructor 😊
+
 ## User Story
 
 ```
@@ -31,6 +35,3 @@ THEN I can create another new note
 
 ## Deployed URLs
 
-## Work References
-* All activities inside RUT-VIRT-FSF-PT-06-2022-U-LOLC/11-Express 😔
-* My awesome Study Buddies/Tutors/TA/Instructor 😊
