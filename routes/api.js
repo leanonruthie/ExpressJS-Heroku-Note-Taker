@@ -1,17 +1,17 @@
 // 11-Express/01-Activities/21-Ins_Modular-Routing and 22-Stu_Modular-Routing for helpers folder
 
-const notes = require('express').Router();
+const router = require('express').Router();
 const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
 const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving all the tips
-notes.get('/', (req, res) => {
+router.get('/notes', (req, res) => {
   console.info(`${req.method} request received for notes`);
   readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
 // POST Route for a new UX/UI tip
-notes.post('/', (req, res) => {
+router.post('/notes', (req, res) => {
   console.info(`${req.method} request received to add a note`);
   console.log(req.body);
 
@@ -31,4 +31,4 @@ notes.post('/', (req, res) => {
   }
 });
 
-module.exports = notes;
+module.exports = router;
