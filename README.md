@@ -27,7 +27,7 @@ THEN the new note is listed below my old notes to the left
 WHEN I click on any note on the left
 THEN the title and content of clicked note appears to the right
 WHEN I click on the "write" icon next to my save icon
-THEN I can create another new note
+THEN I can create a brand new note
 ```
 
 ## Screenshot
