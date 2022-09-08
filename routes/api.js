@@ -14,6 +14,7 @@ router.get('/notes', (req, res) => {
 
 // 11-Express/01-Activities/01-Activities/28-Stu_Mini-Project
 // GET Route for a specific note
+// See index.js to remind myself that router.get is derived from router.use('/api', apiRouter)
 router.get('/notes/:id', (req, res) => {
   const routerId = req.params.id;
   readFromFile('./db/db.json')
@@ -27,12 +28,13 @@ router.get('/notes/:id', (req, res) => {
 });
 
 // DELETE Route for a specific note
+// See index.js to remind myself that router.delete is derived from router.use('/api', apiRouter)
 router.delete('/notes/:id', (req, res) => {
   const routerId = req.params.id;
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
-      // Make a new array of all tips except the one with the ID provided in the URL
+      // Make a new array of all notes except the one with the ID provided in the URL
       const result = json.filter((router) => router.id !== routerId);
 
       // Save that array to the filesystem
