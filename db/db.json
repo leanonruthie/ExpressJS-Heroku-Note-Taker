@@ -13,5 +13,10 @@
         "title": "Install Nodemon",
         "text": "Proven from tutoring, it saves you a lot of time instead of \"node server.js\"!",
         "id": "6dd5"
+    },
+    {
+        "title": "Go to Office Hours",
+        "text": "In three months, you will not have Nate and Jasper to hold your hand through troubleshooting and completing assignments. Go to office hours often and don't be embarrassed to ask all the questions you need NOW!",
+        "id": "3c7e"
     }
 ]

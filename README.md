@@ -31,7 +31,11 @@ THEN I can create a brand new note
 ```
 
 ## Screenshot
-
+<img src="./Assets/first-screenshot.png"/>
+<img src="./Assets/second-screenshot.png"/>
+<img src="./Assets/final-screenshot.png"/>
 
 ## Deployed URLs
+* <a href = https://github.com/leanonruthie/ExpressJS-Heroku-Note-Taker.git>https://github.com/leanonruthie/ExpressJS-Heroku-Note-Taker.git/</a>
+* <a href = ></a>
 
