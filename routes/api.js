@@ -2,7 +2,7 @@
 
 // Tutor taught me how to establish express and router simultaneously
 const router = require('express').Router();
-const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+const { readFromFile, readAndAppend, deleteNote } = require('../helpers/fsUtils');
 const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving all the notes
@@ -16,32 +16,25 @@ router.get('/notes', (req, res) => {
 // GET Route for a specific note
 // See index.js to remind myself that router.get is derived from router.use('/api', apiRouter)
 router.get('/notes/:id', (req, res) => {
-  const routerId = req.params.id;
+  const noteId = req.params.id;
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
-      const result = json.filter((router) => router.id === routerId);
+      const result = json.filter((note) => note.id === noteId);
       return result.length > 0
         ? res.json(result)
-        : res.json('No note with that ID');
+        : res.json('No Note with that ID');
     });
 });
 
-// DELETE Route for a specific note
+// DELETE Route for a specific tip
 // See index.js to remind myself that router.delete is derived from router.use('/api', apiRouter)
 router.delete('/notes/:id', (req, res) => {
-  const routerId = req.params.id;
-  readFromFile('./db/db.json')
-    .then((data) => JSON.parse(data))
-    .then((json) => {
-      // Make a new array of all notes except the one with the ID provided in the URL
-      const result = json.filter((router) => router.id !== routerId);
-
-      // Save that array to the filesystem
-      writeToFile('./db/db.json', result);
-
+  const noteId = req.params.id;
+  deleteNote(noteId, './db/db.json')
+    .then(() => {
       // Respond to the DELETE request
-      res.json(`Item ${routerId} has been deleted 🗑️`);
+      res.json(`Item ${noteId} has been deleted 🗑️`);
     });
 });
 

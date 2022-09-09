@@ -33,4 +33,16 @@ const readAndAppend = (content, file) => {
   });
 };
 
-module.exports = { readFromFile, writeToFile, readAndAppend };
+const deleteNote = (deleteId, file) => {
+  fs.readFile(file, 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+    } else {
+      const parsedData = JSON.parse(data);
+      const result = parsedData.filter((note) => note.id !== deleteId);
+      writeToFile(file, result);
+    }
+  });
+};
+
+module.exports = { readFromFile, writeToFile, readAndAppend, deleteNote };

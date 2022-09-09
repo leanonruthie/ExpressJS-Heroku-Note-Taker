@@ -1,7 +1,17 @@
 [
     {
+        "title": "Eat Well",
+        "text": "We work to eat well! Don't forget to eat!",
+        "id": "581f"
+    },
+    {
+        "title": "Work Out",
+        "text": "Health is wealth. Go visit your best friend's gym for some cardio!",
+        "id": "9808"
+    },
+    {
         "title": "Install Nodemon",
-        "text": "Proven from tutoring, it saves time!",
-        "id": "e395"
+        "text": "Proven from tutoring, it saves you a lot of time instead of \"node server.js\"!",
+        "id": "6dd5"
     }
 ]
