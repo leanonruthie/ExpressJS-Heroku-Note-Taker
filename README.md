@@ -37,5 +37,5 @@ THEN I can create a brand new note
 
 ## Deployed URLs
 * [GitHub Repository](https://github.com/leanonruthie/ExpressJS-Heroku-Note-Taker.git)
-* [My Heroku Application](https://boiling-harbor-24556.herokuapp.com/">https://boiling-harbor-24556.herokuapp.com/)
+* [My Heroku Application](https://boiling-harbor-24556.herokuapp.com/)
 
